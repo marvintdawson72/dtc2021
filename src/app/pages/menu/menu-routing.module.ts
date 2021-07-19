@@ -193,6 +193,11 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'design-elements',
+        loadChildren: () => import('../../pages/design-elements/design-elements.module')
+          .then( m => m.DesignElementsPageModule)
+      },
+      {
         path: 'admin',
         loadChildren: () => import('../../admin/admin.module').then( m => m.AdminPageModule)
       },
