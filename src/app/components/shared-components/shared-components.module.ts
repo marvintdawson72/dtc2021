@@ -4,10 +4,11 @@ import {FooterComponent} from '../footer/footer.component';
 import {HeaderComponent} from '../header/header.component';
 import {IonicModule} from '@ionic/angular';
 import {RouterModule} from '@angular/router';
-import {JumbotronComponent} from '../jumbotron/jumbotron.component';
+import {JumbotronsComponent} from '../design/jumbotrons/jumbotrons.component';
 import {DesignComponent} from '../design/design.component';
 import {ContentLeftComponent} from '../design/page-sections/content-left/content-left.component';
 import {PageSectionsComponent} from '../design/page-sections/page-sections.component';
+import {JumbotronComponent} from '../jumbotron/jumbotron.component';
 
 
 
@@ -17,6 +18,7 @@ import {PageSectionsComponent} from '../design/page-sections/page-sections.compo
     HeaderComponent,
     JumbotronComponent,
     DesignComponent,
+    JumbotronsComponent,
     PageSectionsComponent,
     ContentLeftComponent
   ],
@@ -31,6 +33,7 @@ import {PageSectionsComponent} from '../design/page-sections/page-sections.compo
     JumbotronComponent,
     DesignComponent,
     PageSectionsComponent,
+    JumbotronsComponent,
     ContentLeftComponent
   ]
 })
