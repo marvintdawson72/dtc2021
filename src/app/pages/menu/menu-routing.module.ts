@@ -62,6 +62,14 @@ const routes: Routes = [
         loadChildren: () => import('../blog/blog.module').then(m => m.BlogPageModule)
       },
       {
+        path: 'templates',
+        loadChildren: () => import('../templates/templates.module').then( m => m.TemplatesPageModule)
+      },
+      {
+        path: 'customers',
+        loadChildren: () => import('../customers/customers.module').then( m => m.CustomersPageModule)
+      },
+      {
         path: 'reviews',
         loadChildren: () => import('../reviews/reviews.module').then( m => m.ReviewsPageModule)
       },

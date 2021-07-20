@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {SiteDataService} from '../../../providers/site-data/site-data.service';
 // import { VideoPlayer} from '@ionic-native/video-player/ngx';
 
 @Component({
@@ -10,6 +11,7 @@ import {Router} from '@angular/router';
 export class HomePage implements OnInit {
 
   customerSatisfactionImage = '../../assets/img/site/customer_service.jpg';
+  siteName = this.siteData.siteName;
   public categories = [
     {
       thumbnailImg: true,
@@ -107,7 +109,8 @@ export class HomePage implements OnInit {
   //   .catch(err => {
   //     console.log(err);
   //   });
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private siteData: SiteDataService) { }
 
   ngOnInit() {
   }

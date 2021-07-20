@@ -15,17 +15,22 @@ export class MenuPage implements OnInit {
       icon: 'home'
     },
     {
-      title: 'Physicians',
-      url: '/physicians',
-      icon: 'medkit'
-    },
-    {
-      title: 'Patients',
-      url: '/patients',
+      title: 'Services',
+      url: '/services',
       icon: 'people'
     },
     {
-      title: 'Latest News',
+      title: 'Customers',
+      url: '/customers',
+      icon: 'medkit'
+    },
+    {
+      title: 'Templates',
+      url: '/templates',
+      icon: 'medkit'
+    },
+    {
+      title: 'Blog',
       url: '/blog',
       icon: 'newspaper'
     },

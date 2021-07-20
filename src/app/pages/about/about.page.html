@@ -1,9 +1,59 @@
 <ion-content>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <!--video [src]="vidPlayer"></video-->
+      <img src="../../../assets/img/site/pageheaders/team3.jpg"
+           class="jumbotron__img" alt="Security Image">
+    </div>
+  </div>
   <ion-card class="main-card">
     <ion-card-header>
       <ion-card-title>{{ pageTitle }}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <!-- show by department -->
+      <section class="shop-by-department">
+        <ion-card-header>
+          <ion-card-subtitle class="section-headings">
+            <h1>Meet Our Team</h1>
+            <h5></h5>
+          </ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card>
+          <ion-card-content class="shop-by-department__col--content">
+            <ion-col>
+              <ion-grid>
+                <ion-row class="shop-by-department__col--content__row">
+                  <ion-col class="shop-by-department__col--content__row__cols"
+                           *ngFor="let deps of teamMembers">
+                    <a routerLink="{{ deps.linkPath }}">
+                      <ion-grid>
+                        <ion-row>
+                          <ion-col>
+                            <div class="shop-by-department__col--content__row__cols__img">
+                              <img class="shop-by-department--col__content__row__cols__img__size"
+                                   src="{{ deps.linkImage }}" alt="{{ deps.linkText }}">
+                            </div>
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col>
+                            <div class="shop-by-department__col--content__row__cols__text">
+                              <a href="{{ deps.linkPath}}">{{ deps.linkText }}</a>
+                            </div>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                    </a>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-col>
+          </ion-card-content>
+        </ion-card>
+
+      </section>
 
     </ion-card-content>
   </ion-card>
